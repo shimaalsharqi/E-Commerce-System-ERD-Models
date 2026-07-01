@@ -25,5 +25,8 @@ namespace E_CommerceSystem.Models
         //Optional
         [MaxLength(300)]
         public string? imageUrl { get; set; }//User input
+
+        // RELATIONSHIPS
+        public List<Product> Products { get; set; }// Navigation property 
     }
 }

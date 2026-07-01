@@ -16,10 +16,10 @@ namespace E_CommerceSystem.Models
         //unique
         public int reviewId { get; set; }//System Genrated
         [Required]
-        [ForeignKey("")]
+        [ForeignKey("User")]
         public int userId { get; set; }//From List ,foreign key
         [Required]
-        [ForeignKey("")]
+        [ForeignKey("Product")]
         public int productId { get; set; }//From List ,foreign key
         [Required]
         [Range(1,5)]
@@ -29,5 +29,9 @@ namespace E_CommerceSystem.Models
         //Optional
         [MaxLength(1000)]
         public string comment { get; set; }//User input
+
+        // RELATIONSHIPS
+        public User User { get; set; }// Navigation property 
+        public Product Product { get; set; }// Navigation property 
     }
 }

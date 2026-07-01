@@ -16,7 +16,7 @@ namespace E_CommerceSystem.Models
         //unique
         public int orderId { get; set; }//System Genrated
         [Required]
-        [ForeignKey("")]
+        [ForeignKey("User")]
         public int userId { get; set; }//From List ,foreign key
         [Required]
         public DateTime orderDate { get; set; }//System Genrated
@@ -32,5 +32,9 @@ namespace E_CommerceSystem.Models
         [Required]
         [MaxLength(50)]
         public int paymentMethod { get; set; }//User input
+
+        // RELATIONSHIPS
+        public User User { get; set; }// Navigation property 
+        public List<Product> Products { get; set; }// Navigation property 
     }
 }

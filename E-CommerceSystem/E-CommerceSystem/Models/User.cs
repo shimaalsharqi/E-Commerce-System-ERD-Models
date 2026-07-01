@@ -39,6 +39,8 @@ namespace E_CommerceSystem.Models
         public bool isActive { get; set; } = true; //Defult Value
 
 
-        
+        // RELATIONSHIPS
+        public List<Order> Orders { get; set; }// // Navigation property 
+        public List<Review> Reviews { get; set; }// // Navigation property 
     }
 }

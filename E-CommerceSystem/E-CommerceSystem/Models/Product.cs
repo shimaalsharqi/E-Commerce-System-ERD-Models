@@ -20,7 +20,7 @@ namespace E_CommerceSystem.Models
         [MaxLength(150)]
         public string? productName { get; set; }//User input
         [Required]
-        [ForeignKey("")] 
+        [ForeignKey("Category")] 
         public int categoryId { get; set; }//From List ,foreign key
         //Optional
         [MaxLength(1000)]
@@ -37,5 +37,11 @@ namespace E_CommerceSystem.Models
         [Required]
         public DateTime createdAt { get; set; }//System Genrated
         public bool isAvailable { get; set; } = true; //Defult Value
+
+
+        // RELATIONSHIPS
+        public List<Order> Orders { get; set; }// Navigation property 
+        public List<Review> Reviews { get; set; }// // Navigation property 
+        public Category Category { get; set; }// Navigation property 
     }
 }
