@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF84BC49-743A-463A-B4F5-9885D96CBB35}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF84BC49-743A-463A-B4F5-9885D96CBB35}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF84BC49-743A-463A-B4F5-9885D96CBB35}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF84BC49-743A-463A-B4F5-9885D96CBB35}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
-              "RelativeDocumentMoniker": "E-CommerceSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
-              "RelativeToolTip": "E-CommerceSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
+              "RelativeToolTip": "E-CommerceSystem\\Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T07:49:48.147Z",
+              "WhenOpened": "2026-07-01T07:52:00.394Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

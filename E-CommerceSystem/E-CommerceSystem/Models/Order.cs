@@ -1,19 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace E_CommerceSystem.Models
 {
+    [Table("Order")]
     public class Order
     {
+        [Key]
+        [Required]
+        //unique
         public int orderId { get; set; }//System Genrated
+        [Required]
+        [ForeignKey("")]
         public int userId { get; set; }//From List ,foreign key
+        [Required]
         public DateTime orderDate { get; set; }//System Genrated
-        public string status { get; set; }//User input
+        [Required]
+        [MaxLength(30)]
+        public string status { get; set; } = "Pending";//Defult Value
+        [Required]
+        [MaxLength(30)]
         public string shippingAddress { get; set; }//User input
+        [Range(0.0, double.MaxValue)]
+        [Required]
         public decimal totalAmount { get; set; }//Calculated
+        [Required]
+        [MaxLength(50)]
         public int paymentMethod { get; set; }//User input
     }
 }
