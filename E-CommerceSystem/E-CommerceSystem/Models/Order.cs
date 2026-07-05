@@ -12,8 +12,7 @@ namespace E_CommerceSystem.Models
     public class Order
     {
         [Key]
-        [Required]
-        //unique
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int orderId { get; set; }//System Genrated
         [Required]
         [ForeignKey("User")]
@@ -35,6 +34,6 @@ namespace E_CommerceSystem.Models
 
         // RELATIONSHIPS
         public User User { get; set; }// Navigation property 
-        public List<Product> Products { get; set; }// Navigation property 
+        public List<OrderItem> OrderItem { get; set; }// Navigation property 
     }
 }

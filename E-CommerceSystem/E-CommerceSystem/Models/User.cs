@@ -12,7 +12,7 @@ namespace E_CommerceSystem.Models
     public class User
     {
         [Key]
-        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int userId { get; set; }//System Genrated
         [Required]
         [MaxLength(50)]
@@ -40,7 +40,7 @@ namespace E_CommerceSystem.Models
 
 
         // RELATIONSHIPS
-        public List<Order> Orders { get; set; }// // Navigation property 
-        public List<Review> Reviews { get; set; }// // Navigation property 
+        public List<Order> Orders { get; set; }// //  reverse navigation  — one User places many Orders
+        public List<Review> Reviews { get; set; }// //  reverse navigation - one User writes many Reviews
     }
 }

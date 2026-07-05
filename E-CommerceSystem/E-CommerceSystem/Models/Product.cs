@@ -13,8 +13,7 @@ namespace E_CommerceSystem.Models
     public class Product
     {
         [Key]
-        [Required]
-        //unique
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int productId { get; set; }//System Genrated
         [Required]
         [MaxLength(150)]
@@ -40,8 +39,8 @@ namespace E_CommerceSystem.Models
 
 
         // RELATIONSHIPS
-        public List<Order> Orders { get; set; }// Navigation property 
-        public List<Review> Reviews { get; set; }// // Navigation property 
+        public List<OrderItem> OrderItems { get; set; }// reverse navigation
+        public List<Review> Reviews { get; set; }//  reverse navigation
         public Category Category { get; set; }// Navigation property 
     }
 }

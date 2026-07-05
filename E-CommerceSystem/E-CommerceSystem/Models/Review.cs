@@ -12,8 +12,7 @@ namespace E_CommerceSystem.Models
     public class Review
     {
         [Key]
-        [Required]
-        //unique
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int reviewId { get; set; }//System Genrated
         [Required]
         [ForeignKey("User")]

@@ -12,8 +12,7 @@ namespace E_CommerceSystem.Models
     public class Category
     {
         [Key]
-        [Required]
-        //unique
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int categoryId { get; set; }//System Genrated
         [Required]
         [MaxLength(100)]
