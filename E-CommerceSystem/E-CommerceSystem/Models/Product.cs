@@ -25,6 +25,7 @@ namespace E_CommerceSystem.Models
         [MaxLength(1000)]
         public string description { get; set; }//User input
         [Required]
+        [Column(TypeName = "decimal(10,2)")]
         [Range(0.01,double.MaxValue)]
         public decimal price { get; set; } = 0;//User input
         [Required]

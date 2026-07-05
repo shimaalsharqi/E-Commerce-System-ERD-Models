@@ -26,6 +26,7 @@ namespace E_CommerceSystem.Models
         [MaxLength(30)]
         public string shippingAddress { get; set; }//User input
         [Range(0.0, double.MaxValue)]
+        [Column(TypeName = "decimal(10,2)")]
         [Required]
         public decimal totalAmount { get; set; }//Calculated
         [Required]
