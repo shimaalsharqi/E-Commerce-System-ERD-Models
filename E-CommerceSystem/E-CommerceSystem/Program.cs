@@ -4,10 +4,10 @@ namespace E_CommerceSystem
 {
     public class Program
     {
-        // Static in-memory context
+        //  Static in-memory context
         public static ECommerceContext context = new ECommerceContext();
 
-        // Register a New User Function
+        // 1 Register a New User Function
         public static void RegisterUser()
         {
             // User information
@@ -54,7 +54,7 @@ namespace E_CommerceSystem
             Console.WriteLine("User Registered Successfully.");
             Console.WriteLine("Assigned User ID: " + newUser.userId);
         }
-        // Add a New Product Function
+        //2  Add a New Product Function
         public static void AddProduct()
         {
             // Check if there are categories
@@ -114,7 +114,7 @@ namespace E_CommerceSystem
             Console.WriteLine("Product Added Successfully.");
             Console.WriteLine("Product ID: " + newProduct.productId);
         }
-        // Place a New Order Function
+        // 3 Place a New Order Function
         public static void PlaceOrder()
         {
             // Check if there are users
@@ -229,6 +229,117 @@ namespace E_CommerceSystem
             Console.WriteLine("Order ID: " + newOrder.orderId);
             Console.WriteLine("Total Amount: " + newOrder.totalAmount);
         }
+        // 4 Write a Product Review Function
+        public static void WriteProductReview()
+        {
+            // Check if there are users
+            if (context.Users.Count() == 0)
+            {
+                Console.WriteLine("No users found.");
+                return;
+            }
+
+            // Check if there are products
+            if (context.Products.Count() == 0)
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+
+            // Display users
+            Console.WriteLine("Users:");
+            foreach (var user in context.Users)
+            {
+                Console.WriteLine(user.userId + " - " + user.fullName);
+            }
+
+            Console.WriteLine("Enter User ID:");
+            int userId = int.Parse(Console.ReadLine());
+
+            // Display products
+            Console.WriteLine("Products:");
+            foreach (var product in context.Products)
+            {
+                Console.WriteLine(product.productId + " - " + product.productName);
+            }
+
+            Console.WriteLine("Enter Product ID:");
+            int productId = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Rating (1-5):");
+            int rating = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Comment:");
+            string comment = Console.ReadLine();
+
+            // Create review object
+            Review newReview = new Review()
+            {
+                userId = userId,
+                productId = productId,
+                rating = rating,
+                comment = comment,
+                reviewDate = DateTime.Now
+            };
+
+            // Add review to database
+            context.Reviews.Add(newReview);
+
+            // Save changes
+            context.SaveChanges();
+
+            Console.WriteLine("Review Added Successfully.");
+            Console.WriteLine("Review ID: " + newReview.reviewId);
+        }
+        // 5 Update Product Price and Availability Function
+        public static void UpdateProduct()
+        {
+            // Check if there are products
+            if (context.Products.Count() == 0)
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+
+            // Display all products
+            Console.WriteLine("Products:");
+            foreach (var product in context.Products)
+            {
+                Console.WriteLine(product.productId + " - " +
+                                  product.productName +
+                                  " Price: " + product.price +
+                                  " Available: " + product.isAvailable);
+            }
+
+            Console.WriteLine("Enter Product ID:");
+            int productId = int.Parse(Console.ReadLine());
+
+            // Find product
+            Product productToUpdate = context.Products.Find(productId);
+
+            if (productToUpdate == null)
+            {
+                Console.WriteLine("Product not found.");
+                return;
+            }
+
+            // Read new price
+            Console.WriteLine("Enter New Price:");
+            decimal newPrice = decimal.Parse(Console.ReadLine());
+
+            // Read availability
+            Console.WriteLine("Is Product Available? (true/false)");
+            bool availability = bool.Parse(Console.ReadLine());
+
+            // Update product
+            productToUpdate.price = newPrice;
+            productToUpdate.isAvailable = availability;
+
+            // Save changes
+            context.SaveChanges();
+
+            Console.WriteLine("Product Updated Successfully.");
+        }
         static void Main(string[] args)
         {
             bool stop = false;
@@ -242,6 +353,9 @@ namespace E_CommerceSystem
                 Console.WriteLine("=====================================");
                 Console.WriteLine("1- Register New User");
                 Console.WriteLine("2- Add New Product");
+                Console.WriteLine("3- Place Order");
+                Console.WriteLine("4- Write Product Review");
+                Console.WriteLine("5- Update Product Price and Availability");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -256,13 +370,13 @@ namespace E_CommerceSystem
                         AddProduct();
                         break;
                     case 3:
-
+                        PlaceOrder();
                         break;
                     case 4:
-
+                        WriteProductReview();
                         break;
                     case 5:
-
+                        UpdateProduct();
                         break;
                     case 6:
 

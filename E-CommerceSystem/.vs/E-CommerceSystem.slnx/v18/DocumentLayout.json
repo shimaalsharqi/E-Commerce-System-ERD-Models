@@ -58,8 +58,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Migrations\\20260707115717_AddInOrderItem.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T11:57:18.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T11:57:18.088Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\OrderItem.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T11:31:50.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T11:31:50.848Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "E-CommerceSystem\\ECommerceContext.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAQwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T07:12:38.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T07:12:38.043Z"
             },
             {
               "$type": "Document",
@@ -97,8 +94,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\Category.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:06:57.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T06:06:57.86Z"
             },
             {
               "$type": "Document",
@@ -110,8 +106,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\Order.cs",
               "ViewState": "AgIAAA8AAAAAAOCrkcE6wCAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:06:53.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T06:06:53.211Z"
             },
             {
               "$type": "Document",
@@ -121,7 +116,7 @@
               "RelativeDocumentMoniker": "E-CommerceSystem\\Program.cs",
               "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
               "RelativeToolTip": "E-CommerceSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAGUBAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T06:05:53.676Z",
               "EditorCaption": ""
@@ -136,8 +131,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\Product.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwCMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:06:48.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T06:06:48.413Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\Review.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:06:30.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T06:06:30.787Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "E-CommerceSystem\\Models\\User.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAzwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:05:50.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-05T06:05:50.842Z"
             }
           ]
         }
