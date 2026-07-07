@@ -24,6 +24,10 @@ namespace E_CommerceSystem.Models
         public int orderId { get; set; }//From List ,foreign key
         public Order Order { get; set; }
 
+        [Required]
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal unitPrice { get; set; }//User Input
+
 
         [Required]
         [ForeignKey("Product")]

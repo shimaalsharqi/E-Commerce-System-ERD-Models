@@ -31,7 +31,7 @@ namespace E_CommerceSystem.Models
         public decimal totalAmount { get; set; }//Calculated
         [Required]
         [MaxLength(50)]
-        public int paymentMethod { get; set; }//User input
+        public string paymentMethod { get; set; }//User input
 
         // RELATIONSHIPS
         public User User { get; set; }// Navigation property 

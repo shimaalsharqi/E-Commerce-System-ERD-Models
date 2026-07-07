@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\migrations\\20260705075458_addthelimitfornumbsr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\migrations\\20260705075458_addthelimitfornumbsr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\ecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\ecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\ecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\migrations\\20260707115717_addinorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\migrations\\20260707115717_addinorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\shima\\onedrive\\desktop\\e-commerce system erd \u0026 model\\e-commercesystem\\e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,94 +46,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20260705075458_AddTheLimitForNumbsr.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260705075458_AddTheLimitForNumbsr.cs",
-              "RelativeDocumentMoniker": "E-CommerceSystem\\Migrations\\20260705075458_AddTheLimitForNumbsr.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260705075458_AddTheLimitForNumbsr.cs",
-              "RelativeToolTip": "E-CommerceSystem\\Migrations\\20260705075458_AddTheLimitForNumbsr.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T07:54:58.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20260705074912_initialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs",
-              "RelativeDocumentMoniker": "E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs",
-              "RelativeToolTip": "E-CommerceSystem\\Migrations\\20260705074912_initialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20260707115717_AddInOrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260707115717_AddInOrderItem.cs",
+              "RelativeDocumentMoniker": "E-CommerceSystem\\Migrations\\20260707115717_AddInOrderItem.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Migrations\\20260707115717_AddInOrderItem.cs",
+              "RelativeToolTip": "E-CommerceSystem\\Migrations\\20260707115717_AddInOrderItem.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T07:49:12.959Z",
+              "WhenOpened": "2026-07-07T11:57:18.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\OrderItem.cs",
+              "RelativeToolTip": "E-CommerceSystem\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T11:31:50.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ECommerceContext.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\ECommerceContext.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\ECommerceContext.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\ECommerceContext.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\ECommerceContext.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\ECommerceContext.cs",
               "RelativeToolTip": "E-CommerceSystem\\ECommerceContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T07:12:38.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Category.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Category.cs",
               "RelativeToolTip": "E-CommerceSystem\\Models\\Category.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:06:57.86Z"
+              "WhenOpened": "2026-07-05T06:06:57.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Order.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Order.cs",
               "RelativeToolTip": "E-CommerceSystem\\Models\\Order.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAOCrkcE6wCAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T06:06:53.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
+              "RelativeDocumentMoniker": "E-CommerceSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
+              "RelativeToolTip": "E-CommerceSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T06:05:53.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
               "RelativeToolTip": "E-CommerceSystem\\Models\\Product.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T06:06:48.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Review.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
               "RelativeToolTip": "E-CommerceSystem\\Models\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T06:06:30.787Z",
               "EditorCaption": ""
@@ -141,26 +155,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
-              "RelativeDocumentMoniker": "E-CommerceSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
-              "RelativeToolTip": "E-CommerceSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:05:53.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\shima\\OneDrive\\Desktop\\E-Commerce System ERD \u0026 Model\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\User.cs",
               "RelativeToolTip": "E-CommerceSystem\\Models\\User.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAzwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T06:05:50.842Z"
+              "WhenOpened": "2026-07-05T06:05:50.842Z",
+              "EditorCaption": ""
             }
           ]
         }
