@@ -637,6 +637,59 @@ namespace E_CommerceSystem
             }
         }
 
+     
+        //12 Product Summary Report Function
+        public static void ProductSummaryReport()
+        {
+            // Part A — Projection:
+
+            var report = context.Products
+                .Select(p => new
+                {
+                    ProductName = p.productName,
+                    CategoryName = p.Category.categoryName,
+                    ReviewCount = p.Reviews.Count(),
+                    AvgRating = p.Reviews.Any() ? p.Reviews.Average(r => r.rating) : 0,
+                    Stock = p.stockQuantity
+                })
+                .ToList();
+
+            // Display the projected summary list
+
+            Console.WriteLine("Product Summary Report");
+
+            foreach (var q in report)
+            {
+     
+                Console.WriteLine("Product: " + q.ProductName);
+                Console.WriteLine("Category: " + q.CategoryName);
+                Console.WriteLine("Average Rating: " + q.AvgRating);
+                Console.WriteLine("Review Count: " + q.ReviewCount);
+                Console.WriteLine("Stock: " + q.Stock);
+            }
+
+
+            //  Part B — Lazy Loading 
+
+            Console.WriteLine("Lazy Loading ");
+
+            Product product = context.Products.FirstOrDefault();
+            //Check
+
+            if (product == null)
+            {
+                Console.WriteLine("Not Avilable ");
+               
+            }
+
+            Console.WriteLine("Product: " + product.productName);
+
+            // Second query fires here
+            foreach (Review review in product.Reviews)
+            {
+                Console.WriteLine("Rating: " + review.rating);
+            }
+        }
         static void Main(string[] args)
         {
             bool stop = false;
@@ -657,6 +710,9 @@ namespace E_CommerceSystem
                 Console.WriteLine("7- Delete a Review");
                 Console.WriteLine("8-View All Products");
                 Console.WriteLine("9-Filter Products by Category and Price Range");
+                Console.WriteLine("10-Get Category with All Its Products");
+                Console.WriteLine("11-View Order History with Full Details");
+                Console.WriteLine("12-Product Summary Report ");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -695,7 +751,10 @@ namespace E_CommerceSystem
                         GetCategorywithAllItsProducts();
                         break;
                     case 11:
-
+                        ViewOrderHistoryWithFullDetails();
+                        break;
+                    case 12:
+                        ViewOrderHistoryWithFullDetails();
                         break;
                     case 0:
 

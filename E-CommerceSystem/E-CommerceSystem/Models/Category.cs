@@ -26,6 +26,6 @@ namespace E_CommerceSystem.Models
         public string? imageUrl { get; set; }//User input
 
         // RELATIONSHIPS
-        public List<Product> Products { get; set; }// Navigation property 
+        public virtual List<Product> Products { get; set; }// Navigation property 
     }
 }

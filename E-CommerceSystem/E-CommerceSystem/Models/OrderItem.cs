@@ -22,7 +22,7 @@ namespace E_CommerceSystem.Models
         [Required]
         [ForeignKey("Order")]
         public int orderId { get; set; }//From List ,foreign key
-        public Order Order { get; set; }
+        public virtual Order Order { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]
@@ -32,6 +32,6 @@ namespace E_CommerceSystem.Models
         [Required]
         [ForeignKey("Product")]
         public int productId { get; set; }//From List ,foreign key
-        public Product Product { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

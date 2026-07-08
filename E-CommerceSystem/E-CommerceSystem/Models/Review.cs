@@ -30,7 +30,7 @@ namespace E_CommerceSystem.Models
         public string comment { get; set; }//User input
 
         // RELATIONSHIPS
-        public User User { get; set; }// Navigation property 
-        public Product Product { get; set; }// Navigation property 
+        public virtual User User { get; set; }// Navigation property 
+        public virtual Product Product { get; set; }// Navigation property 
     }
 }

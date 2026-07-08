@@ -34,7 +34,7 @@ namespace E_CommerceSystem.Models
         public string paymentMethod { get; set; }//User input
 
         // RELATIONSHIPS
-        public User User { get; set; }// Navigation property 
-        public List<OrderItem> OrderItem { get; set; }// Navigation property 
+        public virtual User User { get; set; }// Navigation property 
+        public virtual List<OrderItem> OrderItem { get; set; }// Navigation property 
     }
 }

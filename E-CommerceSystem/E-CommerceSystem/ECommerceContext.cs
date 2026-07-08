@@ -19,7 +19,8 @@ namespace E_CommerceSystem
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=SHIMA;Database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=True;");
+            options.UseLazyLoadingProxies()
+                   .UseSqlServer("Server=SHIMA;Database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }

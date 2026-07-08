@@ -40,7 +40,7 @@ namespace E_CommerceSystem.Models
 
 
         // RELATIONSHIPS
-        public List<Order> Orders { get; set; }// //  reverse navigation  — one User places many Orders
-        public List<Review> Reviews { get; set; }// //  reverse navigation - one User writes many Reviews
+        public virtual List<Order> Orders { get; set; }// //  reverse navigation  — one User places many Orders
+        public virtual List<Review> Reviews { get; set; }// //  reverse navigation - one User writes many Reviews
     }
 }

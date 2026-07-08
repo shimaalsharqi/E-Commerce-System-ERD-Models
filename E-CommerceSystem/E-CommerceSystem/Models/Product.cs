@@ -40,8 +40,8 @@ namespace E_CommerceSystem.Models
 
 
         // RELATIONSHIPS
-        public List<OrderItem> OrderItems { get; set; }// reverse navigation
-        public List<Review> Reviews { get; set; }//  reverse navigation
-        public Category Category { get; set; }// Navigation property 
+        public virtual List<OrderItem> OrderItems { get; set; }// reverse navigation
+        public virtual List<Review> Reviews { get; set; }//  reverse navigation
+        public virtual Category Category { get; set; }// Navigation property 
     }
 }
