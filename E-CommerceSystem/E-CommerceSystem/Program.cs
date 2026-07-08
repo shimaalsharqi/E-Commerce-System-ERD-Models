@@ -463,6 +463,31 @@ namespace E_CommerceSystem
 
             Console.WriteLine("The Review has the  reviewId "+ reviewIdFound+ " was deleted Successfully ");
         }
+
+        //8 View All Products
+        public static void ViewAllProducts() {
+             context.Products.ToList();
+            // Check if there are Products
+            if (context.Products.Count() == 0)
+            {
+                Console.WriteLine("No Products found ");
+                return;
+            }
+
+            // Display all products
+            Console.WriteLine("Products:");
+            foreach (var product in context.Products)
+            {
+                Console.WriteLine(product.productId + " - " +
+                                  product.productName +
+                                  " Price: " + product.price +
+                                  " stockQuantity: " + product.stockQuantity +
+                                  " Available: " + product.isAvailable);
+            }
+
+
+        }
+
         static void Main(string[] args)
         {
             bool stop = false;
@@ -481,6 +506,7 @@ namespace E_CommerceSystem
                 Console.WriteLine("5- Update Product Price and Availability");
                 Console.WriteLine("6- Cancel Order");
                 Console.WriteLine("7- Delete a Review");
+                Console.WriteLine("8-View All Products");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -507,10 +533,10 @@ namespace E_CommerceSystem
                         CancelOrder();
                         break;
                     case 7:
-                        DeleteReview()
+                        DeleteReview();
                         break;
                     case 8:
-
+                        ViewAllProducts();
                         break;
                     case 9:
 
