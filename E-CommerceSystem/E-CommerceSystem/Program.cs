@@ -51,7 +51,7 @@ namespace E_CommerceSystem
             context.SaveChanges();
 
             // Display generated ID
-            Console.WriteLine("User Registered Successfully.");
+            Console.WriteLine("User Registered Successfully");
             Console.WriteLine("Assigned User ID: " + newUser.userId);
         }
         //2  Add a New Product Function
@@ -60,13 +60,13 @@ namespace E_CommerceSystem
             // Check if there are categories
             if (context.Categories.Count() == 0)
             {
-                Console.WriteLine("No categories found. Please add a category first.");
+                Console.WriteLine("No categories found So Please add a category first");
                 return;
             }
 
             // Display all categories
             Console.WriteLine("Available Categories:");
-            foreach (var category in context.Categories.ToList())
+            foreach (var category in context.Categories)
             {
                 Console.WriteLine(category.categoryId + " - " + category.categoryName);
             }
@@ -74,6 +74,14 @@ namespace E_CommerceSystem
             // Read product information
             Console.WriteLine("Enter Category ID:");
             int categoryId = int.Parse(Console.ReadLine());
+            //check the Category ID 
+            bool categoryIDFound = context.Categories.Any(a => a.categoryId == categoryId);
+            if (categoryIDFound == false)
+            {
+                Console.WriteLine("The category Id not avilable");
+                return;
+            }
+
 
             Console.WriteLine("Enter Product Name:");
             string productName = Console.ReadLine();
@@ -111,7 +119,7 @@ namespace E_CommerceSystem
             // Save changes
             context.SaveChanges();
 
-            Console.WriteLine("Product Added Successfully.");
+            Console.WriteLine("Product Added Successfully");
             Console.WriteLine("Product ID: " + newProduct.productId);
         }
         // 3 Place a New Order Function
@@ -120,14 +128,14 @@ namespace E_CommerceSystem
             // Check if there are users
             if (context.Users.Count() == 0)
             {
-                Console.WriteLine("No users found.");
+                Console.WriteLine("No users found");
                 return;
             }
 
             // Check if there are products
             if (context.Products.Count() == 0)
             {
-                Console.WriteLine("No products available.");
+                Console.WriteLine("No products available");
                 return;
             }
 
@@ -140,6 +148,14 @@ namespace E_CommerceSystem
 
             Console.WriteLine("Enter User ID:");
             int userId = int.Parse(Console.ReadLine());
+
+            //check the User ID 
+            bool userIdFound = context.Users.Any(a => a.userId == userId);
+            if (userIdFound == false)
+            {
+                Console.WriteLine("The user Id not avilable");
+                return;
+            }
 
             Console.WriteLine("Enter Shipping Address:");
             string address = Console.ReadLine();
@@ -158,7 +174,7 @@ namespace E_CommerceSystem
                 totalAmount = 0
             };
 
-            // Save order first to get Order ID
+            // Add  new order to DB
             context.Orders.Add(newOrder);
             context.SaveChanges();
 
@@ -168,25 +184,25 @@ namespace E_CommerceSystem
             while (choice.ToLower() == "y")
             {
                 // Display products
-                Console.WriteLine("\nAvailable Products:");
+                Console.WriteLine("Available Products:");
 
-                foreach (var product in context.Products)
+                foreach (var prod in context.Products)
                 {
-                    Console.WriteLine(product.productId + " - " +
-                                      product.productName +
-                                      " Price: " + product.price +
-                                      " Stock: " + product.stockQuantity);
+                    Console.WriteLine(prod.productId + " - " +
+                                      prod.productName +
+                                      " Price: " + prod.price +
+                                      " Stock: " + prod.stockQuantity);
                 }
 
                 Console.WriteLine("Enter Product ID:");
                 int productId = int.Parse(Console.ReadLine());
+                //Check if Product is found
+                Product product = context.Products.FirstOrDefault(a=>a.productId== productId);
 
-                Product product = context.Products.Find(productId);
-
-                if (product == null)
+                if (product ==null)
                 {
-                    Console.WriteLine("Product not found.");
-                    continue;
+                    Console.WriteLine("Product not found");
+                    return;
                 }
 
                 Console.WriteLine("Enter Quantity:");
@@ -195,7 +211,7 @@ namespace E_CommerceSystem
                 if (quantity > product.stockQuantity)
                 {
                     Console.WriteLine("Not enough stock.");
-                    continue;
+                    return;
                 }
 
                 // Create order item
@@ -235,14 +251,14 @@ namespace E_CommerceSystem
             // Check if there are users
             if (context.Users.Count() == 0)
             {
-                Console.WriteLine("No users found.");
+                Console.WriteLine("No users found");
                 return;
             }
 
             // Check if there are products
             if (context.Products.Count() == 0)
             {
-                Console.WriteLine("No products found.");
+                Console.WriteLine("No products found");
                 return;
             }
 
@@ -255,7 +271,13 @@ namespace E_CommerceSystem
 
             Console.WriteLine("Enter User ID:");
             int userId = int.Parse(Console.ReadLine());
-
+            //check the User ID 
+            bool userIdFound = context.Users.Any(a => a.userId == userId);
+            if (userIdFound == false)
+            {
+                Console.WriteLine("The user Id not avilable");
+                return;
+            }
             // Display products
             Console.WriteLine("Products:");
             foreach (var product in context.Products)
@@ -265,6 +287,13 @@ namespace E_CommerceSystem
 
             Console.WriteLine("Enter Product ID:");
             int productId = int.Parse(Console.ReadLine());
+            //check the Product ID
+            bool productIdFound = context.Products.Any(a => a.productId == productId);
+            if (productIdFound == false)
+            {
+                Console.WriteLine("The Product Id not avilable");
+                return;
+            }
 
             Console.WriteLine("Enter Rating (1-5):");
             int rating = int.Parse(Console.ReadLine());
@@ -288,7 +317,7 @@ namespace E_CommerceSystem
             // Save changes
             context.SaveChanges();
 
-            Console.WriteLine("Review Added Successfully.");
+            Console.WriteLine("Review Added Successfully");
             Console.WriteLine("Review ID: " + newReview.reviewId);
         }
         // 5 Update Product Price and Availability Function
@@ -297,7 +326,7 @@ namespace E_CommerceSystem
             // Check if there are products
             if (context.Products.Count() == 0)
             {
-                Console.WriteLine("No products found.");
+                Console.WriteLine("No products found");
                 return;
             }
 
@@ -314,12 +343,12 @@ namespace E_CommerceSystem
             Console.WriteLine("Enter Product ID:");
             int productId = int.Parse(Console.ReadLine());
 
-            // Find product
-            Product productToUpdate = context.Products.Find(productId);
+            //Check if Product is found
+            Product productToUpdate = context.Products.FirstOrDefault(a => a.productId == productId);
 
             if (productToUpdate == null)
             {
-                Console.WriteLine("Product not found.");
+                Console.WriteLine("Product not found");
                 return;
             }
 
@@ -338,7 +367,7 @@ namespace E_CommerceSystem
             // Save changes
             context.SaveChanges();
 
-            Console.WriteLine("Product Updated Successfully.");
+            Console.WriteLine("Product Updated Successfully");
         }
         static void Main(string[] args)
         {
