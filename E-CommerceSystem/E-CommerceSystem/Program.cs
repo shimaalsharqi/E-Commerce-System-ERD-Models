@@ -71,7 +71,7 @@ namespace E_CommerceSystem
                 Console.WriteLine(category.categoryId + " - " + category.categoryName);
             }
 
-            // Read product information
+            
             Console.WriteLine("Enter Category ID:");
             int categoryId = int.Parse(Console.ReadLine());
             //check the Category ID 
@@ -82,7 +82,7 @@ namespace E_CommerceSystem
                 return;
             }
 
-
+            // Read product information
             Console.WriteLine("Enter Product Name:");
             string productName = Console.ReadLine();
 
@@ -432,7 +432,7 @@ namespace E_CommerceSystem
             Console.WriteLine("Order Cancelled Successfully");
         }
 
-        //7 Delete a Review
+        //7 Delete a Review Function
         public static void DeleteReview()
         {
             //view the Review
@@ -463,8 +463,8 @@ namespace E_CommerceSystem
 
             Console.WriteLine("The Review has the  reviewId "+ reviewIdFound+ " was deleted Successfully ");
         }
-
-        //8 View All Products
+        
+        //8 View All Products Function
         public static void ViewAllProducts() {
              context.Products.ToList();
             // Check if there are Products
@@ -486,6 +486,50 @@ namespace E_CommerceSystem
             }
 
 
+        }
+
+        //9 Filter Products by Category and Price Range Function
+        public static void FilterProducts() {
+
+            Console.WriteLine("Enter Category ID:");
+            int categoryId = int.Parse(Console.ReadLine());
+            //check the Category ID 
+            bool categoryIDFound = context.Categories.Any(a => a.categoryId == categoryId);
+            if (categoryIDFound == false)
+            {
+                Console.WriteLine("The category Id not avilable");
+                return;
+            }
+            Console.WriteLine("Enter minimum price");
+            decimal minimumprice= decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter maximum price");
+            decimal maximumprice = decimal.Parse(Console.ReadLine());
+            //check
+            if(minimumprice<0 || maximumprice<0 || maximumprice< minimumprice)
+            {
+                Console.WriteLine("Please Enter Again the right  minimum and maximum price");
+            }
+
+            //List Of Filter Products by Category and Price Range
+            List<Product> productsFound = context.Products.Where(a => a.categoryId == categoryId 
+                                                             && a.price >= minimumprice && 
+                                                                a.price <= maximumprice)
+                                                         .OrderBy(p => p.price)
+                                                         .ToList();
+
+            if (productsFound.Count == null)
+            {
+                Console.WriteLine(" Products not found");
+                return;
+            }
+            //Display the filtered
+            foreach (Product prod in productsFound)
+            {
+                Console.WriteLine(" categoryId: " + prod.categoryId +
+                                  " productName:" + prod.productName +
+                                  " price:" + prod.price +
+                                  " isAvailable: " + prod.isAvailable);
+            }
         }
 
         static void Main(string[] args)

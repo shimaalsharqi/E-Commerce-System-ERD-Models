@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|solutionrelative:e-commercesystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD753D54-FC41-D43B-F36A-0B2EBA86B556}|E-CommerceSystem\\E-CommerceSystem.csproj|c:\\users\\zoom store\\desktop\\e-commerce system\\e-commerce-system-erd-models\\e-commercesystem\\e-commercesystem\\ecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T04:58:03.243Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -46,7 +45,7 @@
               "RelativeDocumentMoniker": "E-CommerceSystem\\Program.cs",
               "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Program.cs",
               "RelativeToolTip": "E-CommerceSystem\\Program.cs",
-              "ViewState": "AgIAANEBAAAAAAAAAAAAANwBAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAPEBAAAAAAAAAAAAAAMCAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T06:05:53.676Z",
               "IsPinned": true,
@@ -55,14 +54,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Review.cs",
-              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Review.cs",
-              "RelativeToolTip": "E-CommerceSystem\\Models\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "E-CommerceSystem\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\zoom store\\Desktop\\E-Commerce System\\E-Commerce-System-ERD-Models\\E-CommerceSystem\\E-CommerceSystem\\Models\\Product.cs",
+              "RelativeToolTip": "E-CommerceSystem\\Models\\Product.cs",
+              "ViewState": "AgIAAA8AAAAAAADof8IlwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T06:55:43.625Z",
+              "WhenOpened": "2026-07-08T07:13:17.061Z",
               "IsPinned": true,
               "EditorCaption": ""
             }
