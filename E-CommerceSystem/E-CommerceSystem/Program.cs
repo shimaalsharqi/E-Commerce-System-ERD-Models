@@ -1,4 +1,5 @@
 ﻿using E_CommerceSystem.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_CommerceSystem
 {
@@ -186,7 +187,7 @@ namespace E_CommerceSystem
                 // Display products
                 Console.WriteLine("Available Products:");
 
-                foreach (var prod in context.Products)
+                foreach (Product prod in context.Products)
                 {
                     Console.WriteLine(prod.productId + " - " +
                                       prod.productName +
@@ -531,6 +532,110 @@ namespace E_CommerceSystem
                                   " isAvailable: " + prod.isAvailable);
             }
         }
+        //10 Get Category with All Its Products Function
+        public static void GetCategorywithAllItsProducts()
+        {
+            // Check if there are categories
+            if (context.Categories.Count() == 0)
+            {
+                Console.WriteLine("No categories found");
+                return;
+            }
+
+            // Display all categories
+            Console.WriteLine("Available Categories:");
+            foreach (Category c in context.Categories)
+            {
+                Console.WriteLine(c.categoryId + " - " + c.categoryName);
+            }
+
+            // Read category ID
+            Console.WriteLine("Enter Category ID:");
+            int categoryId = int.Parse(Console.ReadLine());
+
+            // Find category with products
+            Category categoryFound = context.Categories
+                                            .Include(c => c.Products)
+                                            .FirstOrDefault(c => c.categoryId == categoryId);
+
+            if (categoryFound == null)
+            {
+                Console.WriteLine("Category ID not found");
+                return;
+            }
+
+            // Display category information
+            Console.WriteLine("Category Name: " + categoryFound.categoryName);
+            Console.WriteLine("Description: " + categoryFound.description);
+
+            // Display all products
+            Console.WriteLine("Products:");
+
+            if (categoryFound.Products.Count == 0)
+            {
+                Console.WriteLine("No products in this category");
+                return;
+            }
+            
+                foreach (Product product in categoryFound.Products)
+                {
+                    Console.WriteLine("Product ID: " + product.productId);
+                    Console.WriteLine("Name: " + product.productName);
+                    Console.WriteLine("Price: " + product.price);
+                    Console.WriteLine("Stock: " + product.stockQuantity);
+                    Console.WriteLine("------------------------");
+                }
+            }
+
+        //11 View Order History with Full Details Function
+        public static void ViewOrderHistoryWithFullDetails()
+        {
+            Console.WriteLine("Enter User ID:");
+            int userId = int.Parse(Console.ReadLine());
+
+            // Load user with orders and products
+            User userFound = context.Users
+                                    .Include(u => u.Orders)
+                                    .ThenInclude(o => o.OrderItem)
+                                    .ThenInclude(i => i.Product)
+                                    .FirstOrDefault(u => u.userId == userId);
+
+            if (userFound == null)
+            {
+                Console.WriteLine("User ID not found.");
+                return;
+            }
+
+            Console.WriteLine("User Name: " + userFound.fullName);
+
+            // Check if user has orders
+            if (userFound.Orders.Count == 0)
+            {
+                Console.WriteLine("No orders found.");
+                return;
+            }
+
+            // Display all orders
+            foreach (Order order in userFound.Orders)
+            {
+               
+                Console.WriteLine("Order ID: " + order.orderId);
+                Console.WriteLine("Order Date: " + order.orderDate);
+                Console.WriteLine("Status: " + order.status);
+                Console.WriteLine("Total Amount: " + order.totalAmount);
+
+                Console.WriteLine("Products:");
+
+                // Display order items
+                foreach (OrderItem item in order.OrderItem)
+                {
+                    Console.WriteLine("Product Name: " + item.Product.productName);
+                    Console.WriteLine("Unit Price: " + item.unitPrice);
+                    Console.WriteLine("Quantity: " + item.quantity);
+                    
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -551,6 +656,7 @@ namespace E_CommerceSystem
                 Console.WriteLine("6- Cancel Order");
                 Console.WriteLine("7- Delete a Review");
                 Console.WriteLine("8-View All Products");
+                Console.WriteLine("9-Filter Products by Category and Price Range");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -583,10 +689,10 @@ namespace E_CommerceSystem
                         ViewAllProducts();
                         break;
                     case 9:
-
+                        FilterProducts();
                         break;
                     case 10:
-
+                        GetCategorywithAllItsProducts();
                         break;
                     case 11:
 
