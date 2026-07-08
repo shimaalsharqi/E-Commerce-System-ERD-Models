@@ -369,6 +369,68 @@ namespace E_CommerceSystem
 
             Console.WriteLine("Product Updated Successfully");
         }
+        // 6 Cancel an Order Function
+        public static void CancelOrder()
+        {
+            // Check if there are orders
+            if (context.Orders.Count() == 0)
+            {
+                Console.WriteLine("No orders found");
+                return;
+            }
+
+            // Display all orders
+            Console.WriteLine("Orders:");
+            foreach (var ord in context.Orders)
+            {
+                Console.WriteLine("Order ID: " + ord.orderId +
+                                  " | Status: " + ord.status);
+            }
+
+            Console.WriteLine("Enter Order ID:");
+            int orderId = int.Parse(Console.ReadLine());
+
+            // Check
+            Order order = context.Orders.FirstOrDefault(o => o.orderId == orderId);
+
+            if (order == null)
+            {
+                Console.WriteLine("Order not found");
+                return;
+            }
+
+            // Check if the order is already cancelled
+            if (order.status == "Cancelled")
+            {
+                Console.WriteLine("Order is already cancelled");
+                return;
+            }
+
+            // Get all order items
+            List<OrderItem> items = context.OrderItems
+                                           .Where(i => i.orderId == orderId)
+                                           .ToList();
+
+            // Restore product stock
+            foreach (var item in items)
+            {
+                Product product = context.Products
+                                         .FirstOrDefault(p => p.productId == item.productId);
+
+                if (product != null)
+                {
+                    product.stockQuantity += item.quantity;
+                }
+            }
+
+            // Update order status
+            order.status = "Cancelled";
+
+            // Save changes
+            context.SaveChanges();
+
+            Console.WriteLine("Order Cancelled Successfully");
+        }
         static void Main(string[] args)
         {
             bool stop = false;
@@ -385,6 +447,7 @@ namespace E_CommerceSystem
                 Console.WriteLine("3- Place Order");
                 Console.WriteLine("4- Write Product Review");
                 Console.WriteLine("5- Update Product Price and Availability");
+                Console.WriteLine("6- Cancel Order");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -408,7 +471,7 @@ namespace E_CommerceSystem
                         UpdateProduct();
                         break;
                     case 6:
-
+                        CancelOrder();
                         break;
                     case 7:
 
