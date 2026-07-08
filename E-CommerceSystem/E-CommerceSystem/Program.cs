@@ -431,6 +431,38 @@ namespace E_CommerceSystem
 
             Console.WriteLine("Order Cancelled Successfully");
         }
+
+        //7 Delete a Review
+        public static void DeleteReview()
+        {
+            //view the Review
+            foreach (Review Rev in context.Reviews)
+            {
+                Console.WriteLine(" reviewId: " + Rev.reviewId + 
+                                  " rating:" + Rev.rating +
+                                  " comment: " + Rev.comment );
+            }
+            Console.WriteLine("Enter the review Id");
+            int reviewId = int.Parse(Console.ReadLine());
+
+            //Check if Review is found
+            Review reviewIdFound = context.Reviews.FirstOrDefault(a => a.reviewId == reviewId);
+
+            if (reviewIdFound == null)
+            {
+                Console.WriteLine("Review not found");
+                return;
+            }
+
+            //The review must be deleted from the database
+            context.Reviews.Remove(reviewIdFound);
+
+            //save the cahsnge
+            context.SaveChanges();
+
+
+            Console.WriteLine("The Review has the  reviewId "+ reviewIdFound+ " was deleted Successfully ");
+        }
         static void Main(string[] args)
         {
             bool stop = false;
@@ -448,6 +480,7 @@ namespace E_CommerceSystem
                 Console.WriteLine("4- Write Product Review");
                 Console.WriteLine("5- Update Product Price and Availability");
                 Console.WriteLine("6- Cancel Order");
+                Console.WriteLine("7- Delete a Review");
                 Console.WriteLine("0- Exit");
                 Console.WriteLine("=====================================");
                 Console.Write("Enter your choice: ");
@@ -474,7 +507,7 @@ namespace E_CommerceSystem
                         CancelOrder();
                         break;
                     case 7:
-
+                        DeleteReview()
                         break;
                     case 8:
 
