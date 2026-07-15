@@ -9,6 +9,7 @@ namespace E_CommerceSystem
         public static ECommerceContext context = new ECommerceContext();
 
         // 1 Register a New User Function
+
         public static void RegisterUser()
         {
             // User information
